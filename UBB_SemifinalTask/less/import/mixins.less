@@ -1,0 +1,66 @@
+// Mixins
+.gradient(@from, @to) {
+  background-color: @from;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(@from), to(@to));
+  background-image: -webkit-linear-gradient(top, @from, @to);
+  background-image:    -moz-linear-gradient(top, @from, @to);
+  background-image:      -o-linear-gradient(top, @from, @to);
+  background-image:         linear-gradient(to bottom, @from, @to);
+}
+.gradientLeftToRight(@from, @i, @to) {
+  background-color: @from;
+  background-image: -webkit-gradient(linear, left left, right right, from(@from), @i, to(@to));
+  background-image: -webkit-linear-gradient(left, @from, @i, @to);
+  background-image:    -moz-linear-gradient(left, @from, @i, @to);
+  background-image:      -o-linear-gradient(left, @from, @i, @to);
+  background-image:         linear-gradient(to right, @from, @i, @to);
+}
+.text-shadow(@x, @y, @radius, @color){
+  -webkit-text-shadow: @arguments;
+  -moz-text-shadow: @arguments;
+  text-shadow: @arguments;
+}
+.border-radius(@r) {
+  -webkit-border-radius: @r;
+  -moz-border-radius: @r;
+  border-radius: @r;
+}
+.transition(@duration) {
+  -webkit-transition: @duration;
+  -moz-transition: @duration;
+  -o-transition: @duration;
+  transition: @duration;
+}
+.transform(@value) {
+  -webkit-transform: @value;
+  -moz-transform: @value;
+  -ms-transform: @value;
+  -o-transform: @value;
+  transform: @value;
+}
+.opacity (@opacity) {
+  -webkit-opacity: @opacity;
+  -moz-opacity: @opacity;
+  opacity: @opacity;
+}
+.box-sizing (@type) {
+  -webkit-box-sizing: @type;
+  -moz-box-sizing: @type;
+  box-sizing: @type;
+}
+.square (@size) {
+  width: @size;
+  height:@size;
+}
+.size (@width, @height) {
+  width: @width;
+  height:@height;
+}
+.placeholder(@color_ph) {
+  input::-webkit-input-placeholder {
+    color: @color_ph;
+  }
+  input:-moz-placeholder {
+    color: @color_ph;
+  }
+}

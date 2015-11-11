@@ -1,0 +1,657 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Українська біржа благодійності | Шаблон конструктор</title>
+    <link href="~/Content/normalize.css" rel="stylesheet" />  <!-- Normalize -->
+    <link href="~/Content/theme.css" rel="stylesheet" /> <!-- Style -->
+    <link href="~/Content/my.css" rel="stylesheet" /> <!-- Style -->
+</head>
+<body>
+    <!-- theme start -->
+    <header class="header theme__template" role="banner">
+        <a class="header__logo" href="/">
+            <img src="../../Content/images/logo-horizontal.svg" alt="Логотип української біржі благодійності" />
+        </a>
+        <div class="header__description">
+            Оберіть шаблон-структуру чи готовий дизайн
+        </div>
+        <a href="" title="Допомога" class="header__help">Допомога</a>
+    </header>
+    <div class="template theme__template" role="main">
+        <h2>Оберіть шаблон майбутньої сторінки для подальшого редагування</h2>
+        <div class="template__theme">
+            <ul class="template__tabs">
+                <li class="active" role="tab">Шаблон-структура</li>
+                <li role="tab">Готовий дизайн (по категоріям)</li>
+            </ul>
+            <div class="grids">
+                <a href="#/constructor/1" title="1 колонка" class="grids__block">
+                    <img src="../../Content/images/theme/img-1col.svg" alt="1 колонка" />
+                    <div class="grids__name">1 колонка</div>
+                </a>
+                <a href="#/constructor/1" title="1:2 колонки" class="grids__block">
+                    <img src="../../Content/images/theme/img-12col.svg" alt="1:2 колонки" />
+                    <div class="grids__name">1:2 колонки</div>
+                </a>
+                <a href="#/constructor/1" title="1:2:1 колонки" class="grids__block">
+                    <img src="../../Content/images/theme/img-121col.svg" alt="1:2:1 колонки" />
+                    <div class="grids__name">1:2:1 колонки</div>
+                </a>
+                <a href="#/constructor/1" title="1:3 колонки" class="grids__block">
+                    <img src="../../Content/images/theme/img-13col.svg" alt="1:3 колонки" />
+                    <div class="grids__name">1:3 колонки</div>
+                </a>
+                <a href="#/constructor/1" title="1:3:1 колонки" class="grids__block">
+                    <img src="../../Content/images/theme/img-131col.svg" alt="1:3:1 колонки" />
+                    <div class="grids__name">1:3:1 колонки</div>
+                </a>
+                <a href="#/constructor/1" title="1:3:2 колонки" class="grids__block">
+                    <img src="../../Content/images/theme/img-132col.svg" alt="1:3:2 колонки" />
+                    <div class="grids__name">1:3:2 колонки</div>
+                </a>
+                <a href="#/constructor/1" title="1 колонка" class="grids__block">
+                    <img src="../../Content/images/theme/img-1col.svg" alt="1 колонка" />
+                    <div class="grids__name">1 колонка</div>
+                </a>
+                <a href="#/constructor/1" title="1:2 колонки" class="grids__block">
+                    <img src="../../Content/images/theme/img-12col.svg" alt="1:2 колонки" />
+                    <div class="grids__name">1:2 колонки</div>
+                </a>
+                <a href="#/constructor/1" title="1:2:1 колонки" class="grids__block">
+                    <img src="../../Content/images/theme/img-121col.svg" alt="1:2:1 колонки" />
+                    <div class="grids__name">1:2:1 колонки</div>
+                </a>
+                <a href="#/constructor/1" title="1:3 колонки" class="grids__block">
+                    <img src="../../Content/images/theme/img-13col.svg" alt="1:3 колонки" />
+                    <div class="grids__name">1:3 колонки</div>
+                </a>
+                <a href="#/constructor/1" title="1:3:1 колонки" class="grids__block">
+                    <img src="../../Content/images/theme/img-131col.svg" alt="1:3:1 колонки" />
+                    <div class="grids__name">1:3:1 колонки</div>
+                </a>
+                <a href="#/constructor/1" title="1:3:2 колонки" class="grids__block">
+                    <img src="../../Content/images/theme/img-132col.svg" alt="1:3:2 колонки" />
+                    <div class="grids__name">1:3:2 колонки</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer theme__template" role="contentinfo">
+        <ul class="footer__steps">
+            <li class="active">Обрати шаблон</li>
+            <li>Редагувати</li>
+            <li>Зберегти</li>
+            <li>Отримати лінк</li>
+        </ul>
+    </footer>
+    <!-- theme end -->
+    <!-- constructor start -->
+    <header class="header constructor__block" role="banner">
+        <a class="header__logo" href="/">
+            <img src="../../Content/images/logo-horizontal.svg" alt="Логотип української біржі благодійності" />
+        </a>
+
+        <form action="" method="get">
+            <input type="text" name="order[project]" class="header__input" id="projectName" placeholder="Дайте власну назву проекту" />
+        </form>
+        <div class="header__navigation" role="navigation">
+            <a href="" title="Налаштування" class="header__option">Налаштування</a>
+            <a href="" title="Допомога" class="header__help">Допомога</a>
+        </div>
+    </header>
+    <div class="page constructor__block" role="main">
+        <div class="page__sheet">
+            <div id="sortable" class="main">
+                <div class="sort_list" data-type="picture-text">
+                    <div class="top">
+                        <div class="hover">
+                            <i class="hover__full"></i>
+                            <ul class="hover__buttons">
+                                <li class="hover__item edit"></li>
+                                <li class="hover__item copy"></li>
+                                <li class="hover__item delete"></li>
+                            </ul>
+                        </div>
+                        <div class="top__left">
+                            <img src="../../Content/images/icon-image.svg" alt="Ваше зображення" />
+                            <div class="top__description">
+                                Перетягни сюди картинку чи натисни на іконку щоб додати
+                            </div>
+                        </div>
+                        <div class="top__right">
+                            <h1 contenteditable="true">Відредагуй заголовок просто натиснувши на текст</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="sort_list">
+                    <div class="center">
+                        <div class="hover">
+                            <i class="hover__full"></i>
+                            <ul class="hover__buttons">
+                                <li class="hover__item edit"></li>
+                                <li class="hover__item copy"></li>
+                                <li class="hover__item delete"></li>
+                            </ul>
+                        </div>
+                        <h2 contenteditable="true">
+                            Напишіть ключову фразу, яка точно <br />
+                            опише мету створення цієї сторінки
+                        </h2>
+
+                        <div class="center__left" contenteditable="true">
+                            <p>
+                                В цьому блоці опишіть детально, що Ви маєте на меті,
+                                яка Ваша ціль, заради чого Ви створюєте данну сторінку.
+                                Це краще дасть зрозуміти відвідувачам Вашої сторінки,
+                                яку мета ви поставили перед собою, і заради чого вони
+                                мають допомогти Вам.
+                            </p>
+
+                            <p>
+                                Також Ви можете використати панель «Контент» для
+                                додавання нових блоків до Вашої сторінки. Радимо
+                                дати максимульну кількість інформації та фото.
+                                Також обовязково вкажіть назву проекту та лінк на
+                                Вашу сторінку на сайті УББ, для підключення
+                                лічильника на вашу сторінку.
+                            </p>
+                        </div>
+                        <div class="center__right">
+                            <h3>
+                                Щоб активувати лічильник,
+                                додайте лінк на свою сторінку
+                                на сайті УББ
+                            </h3>
+
+                            <div class="center__counter">
+                                <div class="center__process"></div>
+                            </div>
+                            <button class="center__button">Допомогти</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <aside class="panel constructor__block" role="complementary">
+        <ul class="template__tabs">
+            <li class="template__content active" role="tab">Контент</li>
+            <li class="template__design" role="tab">Дизайн</li>
+        </ul>
+        <div class="elements">
+            <div>
+                <div class="content_draggable sort_list" data-type="h1" style="height: auto">
+                    <a href="" title="H1" class="elements__block">
+                        <div class="elements__wrap">
+                            <img src="../../Content/images/panel/H1.svg" alt="H1" />
+
+                            <div class="elements__text">Заголовок</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content_draggable sort_list" data-type="h2" style="height: auto">
+                    <a href="" title="H2" class="elements__block">
+                        <div class="elements__wrap small">
+                            <img src="../../Content/images/panel/H2.svg" alt="H2" />
+
+                            <div class="elements__text">Підзаголовок</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content_draggable sort_list" style="height: auto" data-type="excerption">
+                    <a href="" title="Цитата" class="elements__block">
+                        <div class="elements__wrap small">
+                            <img src="../../Content/images/panel/quotes.svg" alt="Цитата" />
+
+                            <div class="elements__text">Цитата</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content_draggable sort_list" style="height: auto !important;" data-type="text">
+                    <a href="" title="Текст" class="elements__block">
+                        <div class="elements__wrap">
+                            <img src="../../Content/images/panel/text.svg" alt="Текст" />
+
+                            <div class="elements__text">Текст</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content_draggable sort_list" style="height: auto" data-type="text-in-block">
+                    <a href="" title="Текст в блоці" class="elements__block">
+                        <div class="elements__wrap">
+                            <img src="../../Content/images/panel/text_block.svg" alt="Текст в блоці" />
+
+                            <div class="elements__text">Текст в блоці</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content_draggable sort_list" style="height: auto" data-type="broke-line">
+                    <a href="" title="Розділювач" class="elements__block">
+                        <div class="elements__wrap">
+                            <img src="../../Content/images/panel/divider.svg" alt="Розділювач" />
+
+                            <div class="elements__text">Розділювач</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content_draggable" data-type="picture">
+                    <a href="" title="Картинка" class="elements__block">
+                        <div class="elements__wrap">
+                            <img src="../../Content/images/icon-image.svg" alt="Картинка" />
+
+                            <div class="elements__text">Картинка</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content_draggable" data-type="picture-text">
+                    <a href="" title="Карт. + текст" class="elements__block">
+                        <div class="elements__wrap">
+                            <img src="../../Content/images/panel/image_text.svg" alt="Карт. + текст" />
+
+                            <div class="elements__text">Карт. + текст</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content_draggable" data-type="gallery">
+                    <a href="" title="Галерея" class="elements__block">
+                        <div class="elements__wrap">
+                            <img src="../../Content/images/panel/galery.svg" alt="Галерея" />
+
+                            <div class="elements__text">Галерея</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content_draggable" data-type="video">
+                    <a href="" title="Відео" class="elements__block">
+                        <div class="elements__wrap">
+                            <img src="../../Content/images/panel/video.svg" alt="Відео" />
+
+                            <div class="elements__text">Відео</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content_draggable sort_list" data-type="count">
+                    <a href="" title="Лічильник" class="elements__block">
+                        <div class="elements__wrap">
+                            <img src="../../Content/images/panel/counter.svg" alt="Лічильник" />
+
+                            <div class="elements__text">Лічильник</div>
+                        </div>
+                    </a>
+                </div>
+                <li class="content_draggable" data-type="button">
+                    <a href="" title="Кнопка" class="elements__block">
+                        <div class="elements__wrap">
+                            <img src="../../Content/images/panel/button.svg" alt="Кнопка" />
+
+                            <div class="elements__text">Кнопка</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="content_draggable" data-type="social-like">
+                    <a href="" title="Social Like" class="elements__block">
+                        <div class="elements__wrap">
+                            <img src="../../Content/images/panel/soc-like.svg" alt="Social Like" />
+
+                            <div class="elements__text">Social Like</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="content_draggable" data-type="social-share">
+                    <a href="" title="Social Share" class="elements__block">
+                        <div class="elements__wrap">
+                            <img src="../../Content/images/panel/share.svg" alt="Social Share" />
+
+                            <div class="elements__text">Social Share</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="content_draggable" data-type="footer">
+                    <a href="" title="Підвал" class="elements__block">
+                        <div class="elements__wrap">
+                            <img src="../../Content/images/panel/footer.svg" alt="Підвал" />
+
+                            <div class="elements__text">Підвал</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="content_draggable" data-type="map">
+                    <a href="" title="Карта" class="elements__block">
+                        <div class="elements__wrap">
+                            <img src="../../Content/images/panel/icon-map.svg" alt="Карта" />
+
+                            <div class="elements__text">Карта</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="content_draggable" data-type="menu">
+                    <a href="" title="Меню" class="elements__block">
+                        <div class="elements__wrap">
+                            <img src="../../Content/images/panel/menu.svg" alt="Меню" />
+
+                            <div class="elements__text">Меню</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="content_draggable" data-type="contacts">
+                    <a href="" title="Контакти" class="elements__block">
+                        <div class="elements__wrap">
+                            <img src="../../Content/images/panel/contacts.svg" alt="Контакти" />
+
+                            <div class="elements__text">Контакти</div>
+                        </div>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <form class="design settings">
+            <div class="design__item open">
+                <div class="design__title">Стиль фону</div>
+                <div class="setting">
+                    <div class="setting__bgcolor">
+                        <div class="setting__title">Колір фону</div>
+                        <label class="setting__value" for="font-color">
+                            <input type="color" value="#fafafa" id="font-color" name="font[background-color]">color
+                        </label>
+                    </div>
+                    <div class="setting__border">
+                        <div class="setting__title">Кайма</div>
+                        <select name="font[border-style]" id="font-select-border">
+                            <option value="solid">суцільна</option>
+                            <option value="dotted">пунктирна</option>
+                            <option value="dashed">штрих-пунктирна</option>
+                        </select>
+                        <input type="text" name="font[border-width]" value="0px" />
+                        <label class="setting__value" for="font-border-color">
+                            <input type="color" value="#6f99ad" id="font-border-color" name="font[border-color]">#color
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- end item -->
+            <div class="design__item">
+                <div class="design__title">Стиль цитат</div>
+                <div class="setting">
+                    <div class="setting__bgcolor">
+                        <div class="setting__title">Стиль цитат</div>
+                    </div>
+                </div>
+            </div>
+            <!-- end item -->
+            <div class="design__item">
+                <div class="design__title">Стиль тексту</div>
+                <div class="setting">
+                    <div class="setting__bgcolor">
+                        <div class="setting__title">Стиль тексту</div>
+                    </div>
+                </div>
+            </div>
+            <!-- end item -->
+            <div class="design__item">
+                <div class="design__title">Стиль лінків</div>
+                <div class="setting">
+                    <div class="setting__bgcolor">
+                        <div class="setting__title">Стиль лінків</div>
+                    </div>
+                </div>
+            </div>
+            <!-- end item -->
+            <div class="design__item">
+                <div class="design__title">Стиль футеру</div>
+                <div class="setting">
+                    <div class="setting__bgcolor">
+                        <div class="setting__title">Стиль футеру</div>
+                    </div>
+                </div>
+            </div>
+            <!-- end item -->
+            <div class="design__item">
+                <div class="design__title">Стиль лічильника</div>
+                <div class="setting">
+                    <div class="setting__bgcolor">
+                        <div class="setting__title">Стиль лічильника</div>
+                    </div>
+                </div>
+            </div>
+            <!-- end item -->
+            <div class="design__item">
+                <div class="design__title">Стиль соціальних кнопок</div>
+                <div class="setting">
+                    <div class="setting__bgcolor">
+                        <div class="setting__title">Стиль соціальних кнопок</div>
+                    </div>
+                </div>
+            </div>
+            <!-- end item -->
+            <div class="design__item">
+                <div class="design__title">Мобільна версія</div>
+                <div class="setting">
+                    <div class="setting__bgcolor">
+                        <div class="setting__title">Мобільна версія</div>
+                    </div>
+                </div>
+            </div>
+            <!-- start h1 element -->
+            <div class="element__h1">
+                <div class="setting__bgcolor">
+                    <div class="setting__title">Колір фону</div>
+                    <label class="setting__value" for="h1-background-color">
+                        <input type="color" value="#FAFAFA" id="h1-background-color" name="h1[background-color]">color
+                    </label>
+                </div>
+                <div class="setting__bgcolor">
+                    <div class="setting__title">Колір тексту</div>
+                    <label class="setting__value" for="h1-color">
+                        <input type="color" value="#35474c" id="h1-color" name="h1[color]">color
+                    </label>
+                </div>
+                <div class="setting__font">
+                    <div class="setting__title">Шрифт</div>
+                    <select name="h1[font-family]" id="h1-font-family">
+                        <option value="cursive">cursive</option>
+                        <option value="fantasy">fantasy</option>
+                        <option value="sans-serif">sans-serif</option>
+                        <option value="monospace">monospace</option>
+                    </select>
+                </div>
+                <div class="setting__size">
+                    <div class="setting__title">Розмір</div>
+                    <input type="text" name="h1[font-size]" value="36px" />
+                </div>
+                <div class="setting__margin">
+                    <div class="setting__title">Margin-top</div>
+                    <input type="text" name="h1-size[margin-top]" value="1px" />
+                    <div class="setting__title">Margin-bottom</div>
+                    <input type="text" name="h1-size[margin-bottom]" value="1px" />
+                    <div class="setting__title">Margin-left</div>
+                    <input type="text" name="h1-size[margin-left]" value="1px" />
+                    <div class="setting__title">Margin-rigth</div>
+                    <input type="text" name="h1-size[margin-rigth]" value="1px" />
+                </div>
+            </div>
+            <!-- end h1 element -->
+            <!-- start h2 element -->
+            <div class="element__h2">
+                <div class="setting__bgcolor">
+                    <div class="setting__title">Колір фону</div>
+                    <label class="setting__value" for="h2-background-color">
+                        <input type="color" value="#FAFAFA" id="h2-background-color" name="h2[background-color]">color
+                    </label>
+                </div>
+                <div class="setting__bgcolor">
+                    <div class="setting__title">Колір тексту</div>
+                    <label class="setting__value" for="h2-color">
+                        <input type="color" value="#35474c" id="h2-color" name="h2[color]">color
+                    </label>
+                </div>
+                <div class="setting__font">
+                    <div class="setting__title">Шрифт</div>
+                    <select name="h2[font-family]" id="h2-font-family">
+                        <option value="cursive">cursive</option>
+                        <option value="fantasy">fantasy</option>
+                        <option value="sans-serif">sans-serif</option>
+                        <option value="monospace">monospace</option>
+                    </select>
+                </div>
+                <div class="setting__size">
+                    <div class="setting__title">Розмір</div>
+                    <input type="text" name="h2[font-size]" value="28px" />
+                </div>
+                <div class="setting__margin">
+                    <div class="setting__title">Margin-top</div>
+                    <input type="text" name="h2-size[margin-top]" value="1px" />
+                    <div class="setting__title">Margin-bottom</div>
+                    <input type="text" name="h2-size[margin-bottom]" value="1px" />
+                    <div class="setting__title">Margin-left</div>
+                    <input type="text" name="h2-size[margin-left]" value="1px" />
+                    <div class="setting__title">Margin-rigth</div>
+                    <input type="text" name="h2-size[margin-rigth]" value="1px" />
+                </div>
+            </div>
+            <!-- end h2 element -->
+            <!-- start excerption element -->
+            <div class="element__excerption">
+                <div class="setting__bgcolor">
+                    <div class="setting__title">Колір фону</div>
+                    <label class="setting__value" for="excerption-background-color">
+                        <input type="color" value="#FAFAFA" id="excerption-background-color" name="excerption[background-color]">color
+                    </label>
+                </div>
+                <div class="setting__bgcolor">
+                    <div class="setting__title">Колір тексту</div>
+                    <label class="setting__value" for="excerption-color">
+                        <input type="color" value="#35474c" id="excerption-color" name="excerption[color]">color
+                    </label>
+                </div>
+                <div class="setting__font">
+                    <div class="setting__title">Шрифт</div>
+                    <select name="excerption[font-family]" id="excerption-font-family">
+                        <option value="cursive">cursive</option>
+                        <option value="fantasy">fantasy</option>
+                        <option value="sans-serif">sans-serif</option>
+                        <option value="monospace">monospace</option>
+                    </select>
+                </div>
+                <div class="setting__size">
+                    <div class="setting__title">Розмір</div>
+                    <input type="text" name="excerption[font-size]" value="16px" />
+                </div>
+                <div class="setting__margin">
+                    <div class="setting__title">Margin-top</div>
+                    <input type="text" name="excerption-size[margin-top]" value="1px" />
+                    <div class="setting__title">Margin-bottom</div>
+                    <input type="text" name="excerption-size[margin-bottom]" value="1px" />
+                </div>
+            </div>
+            <!-- end excerption element -->
+            <!-- start text element -->
+            <div class="element__text">
+                <div class="setting__bgcolor">
+                    <div class="setting__title">Колір фону</div>
+                    <label class="setting__value" for="text-background-color">
+                        <input type="color" value="#FAFAFA" id="text-background-color" name="text[background-color]">color
+                    </label>
+                </div>
+                <div class="setting__bgcolor">
+                    <div class="setting__title">Колір тексту</div>
+                    <label class="setting__value" for="text-color">
+                        <input type="color" value="#35474c" id="text-color" name="text[color]">color
+                    </label>
+                </div>
+                <div class="setting__font">
+                    <div class="setting__title">Шрифт</div>
+                    <select name="text[font-family]" id="text-font-family">
+                        <option value="cursive">cursive</option>
+                        <option value="fantasy">fantasy</option>
+                        <option value="sans-serif">sans-serif</option>
+                        <option value="monospace">monospace</option>
+                    </select>
+                </div>
+                <div class="setting__size">
+                    <div class="setting__title">Розмір</div>
+                    <input type="text" name="text[font-size]" value="16px" />
+                </div>
+                <div class="setting__margin">
+                    <div class="setting__title">Margin-top</div>
+                    <input type="text" name="text-size[margin-top]" value="1px" />
+                    <div class="setting__title">Margin-bottom</div>
+                    <input type="text" name="text-size[margin-bottom]" value="1px" />
+                </div>
+            </div>
+            <!-- end text element -->
+            <!-- start img + text element -->
+            <div class="element__picture-text">
+                <div class="setting__bgcolor">
+                    <div class="setting__title">Колір фону</div>
+                    <label class="setting__value" for="picture-text-background-color">
+                        <input type="color" value="#FAFAFA" id="picture-text-background-color" name="picture-text[background-color]">color
+                    </label>
+                </div>
+                <div class="setting__bgcolor">
+                    <div class="setting__title">Колір тексту</div>
+                    <label class="setting__value" for="picture-text-color">
+                        <input type="color" value="#35474c" id="picture-text-color" name="picture-text[color]">color
+                    </label>
+                </div>
+                <div class="setting__font">
+                    <div class="setting__title">Шрифт</div>
+                    <select name="picture-text[font-family]" id="picture-text-font-family">
+                        <option value="cursive">cursive</option>
+                        <option value="fantasy">fantasy</option>
+                        <option value="sans-serif">sans-serif</option>
+                        <option value="monospace">monospace</option>
+                    </select>
+                </div>
+                <div class="setting__size">
+                    <div class="setting__title">Розмір</div>
+                    <input type="text" name="picture-text[font-size]" value="16px" />
+                </div>
+                <div class="setting__border">
+                    <div class="setting__title">Кайма</div>
+                    <select name="picture-text-border[border-style]" id="picture-text-border-select-border">
+                        <option value="solid">суцільна</option>
+                        <option value="dotted">пунктирна</option>
+                        <option value="dashed">штрих-пунктирна</option>
+                    </select>
+                    <input type="text" name="picture-text-border[border-width]" value="0px" />
+                    <label class="setting__value" for="picture-text-border-border-color">
+                        <input type="color" value="#6f99ad" id="picture-text-border-border-color" name="picture-text-border[border-color]">#color
+                    </label>
+                </div>
+            </div>
+            <!-- end img + text element -->
+        </form>
+    </aside>
+    <footer class="footer constructor__block" role="contentinfo">
+        <div class="footer__link">
+            Ваша сторінка проекту на сайті УББ:
+        </div>
+        <input type="text" id="link" name="order[link]" class="footer__input" value="http://" />
+        <ul class="footer__steps" >
+            <li><a href="./Theme" style="color: white">Обрати шаблон</a></li>
+            <li><a href="#/constructor/1"style="color: white">Редагувати</a></li>
+            <li id="save"><a href="#" style="color: white">Зберегти</a></li>
+            <li id="getLink"></li>
+        </ul>
+    </footer>
+    <div class="data__style"></div>
+    <!-- constructor end -->
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.11.4.min.js"></script>
+    <script src="~/Scripts/jquery.form-validator.min.js"></script>
+    <script src="~/Scripts/crypto-js.js"></script>
+    <script src="~/Scripts/hmac-sha1.js"></script>
+    <script src="~/Scripts/security.js"></script>
+    <script src="~/Scripts/CustomScripts/app.js"></script>
+    <script src="~/Scripts/CustomScripts/auth.js"></script>
+    <script src="~/Scripts/CustomScripts/main.js"></script>
+    <script src="~/Scripts/CustomScripts/style.js"></script>
+    <script src="~/Scripts/CustomScripts/widgets.js"></script>
+</body>
+</html>

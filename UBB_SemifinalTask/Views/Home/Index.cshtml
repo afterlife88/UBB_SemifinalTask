@@ -1,0 +1,81 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Українська біржа благодійності</title>
+    <link href="~/Content/normalize.css" rel="stylesheet"/> <!-- Normalize -->
+    <link href="~/Content/main.css" rel="stylesheet"/> <!-- Style -->
+    <link href="~/Content/my.css" rel="stylesheet"/> <!-- Style -->
+    
+</head>
+<body>
+    <div class="background" role="main">
+        <div class="background__wrap">
+            <h1>Створи свою <br /> інтернет-сторінку</h1>
+            <h3>Це легко з допомогою простого конструктора</h3>
+            <a href="" title="Натисни для перегляду" class="background__triangle">
+                <img src="../../Content/images/triangle.svg" alt="Кнопка переходу до відеоматериалу" />
+            </a>
+        </div>
+        <div class="background__gradient"></div>
+    </div>
+<aside class="sidebar" role="complementary">
+    <div class="sidebar__logo">
+        <img src="../../Content/images/logo-vertical.svg" alt="Логотип біржі благодійності"/>
+    </div>
+    <form id="registration" action="" method="post" class="sidebar__form">
+        <span class="infoAuth"></span>
+        <input data-validation="length alphanumeric"
+               data-validation-length="3-12"
+               data-validation-error-msg="Ім'я повинно скадатися тільки з буков та цифр латинського алфавиту (3-12 літер)"
+               type="text" name="name" class="sidebar__input name" placeholder="І`мя"/>
+        <input data-validation="email"
+               data-validation-error-msg="Не корректний e-mail адрес"
+               type="email" name="email" class="sidebar__input" placeholder="E-mail"/>
+        <input data-validation="length" data-validation-length="min8" data-validation-error-msg="Дуже короткий(мин. 8)" type="password" name="pass_confirmation" class="sidebar__input" placeholder="Пароль"/>
+        <input data-validation="confirmation" type="password" name="pass" data-validation-error-msg="Пароль не співпадає" class="sidebar__input" placeholder="Пітдвердження паролю"/>
+        <select name="category" class="sidebar__input" data-validation="required" data-validation-error-msg="Оберідь будь-ласка категорію">
+            <option disabled selected>Категорія</option>
+            <option role="option" value="individual">Фізична особа</option>
+            <option role="option" value="entity">Організація</option>
+        </select>
+        <input type="submit" class="sidebar__submit" value="Зареєструватись"/>
+        <div class="sidebar__singin">
+            Вже зареєстровані?
+            <a href="#/login" title="Увійти">Увійти</a>
+        </div>
+    </form>
+    <form id="login" action="" method="post" autocomplete="on" class="sidebar__form">
+        <span class="infoAuth"></span>
+        <input data-validation="email" data-validation-error-msg="Не корректний e-mail адрес" type="email" name="email" class="sidebar__input" placeholder="E-mail"/>
+        <input type="password" name="pass" class="sidebar__input" placeholder="Пароль" data-validation="required" data-validation-error-msg="Потрібен пароль"/>
+        <input type="submit" class="sidebar__submit" value="Увійти"/>
+        <div class="sidebar__singin">
+            Немає аккаунту?
+            <a href="#/registration" title="Зареєструватись">Зареєструватись</a>
+        </div>
+    </form>
+    <div class="sidebar__footer">
+        Натискаючи кнопку «Зареєструватися», <br/>
+        Ви приймаєте умови <a href="" title="Користувацька угода">Користувацької угоди</a>.
+    </div>
+</aside>
+<script src="~/Scripts/jquery-2.1.4.min.js"></script>
+<script src="~/Scripts/jquery-ui-1.11.4.min.js"></script>
+<script src="~/Scripts/jquery.form-validator.min.js"></script>
+<script src="~/Scripts/crypto-js.js"></script>
+<script src="~/Scripts/hmac-sha1.js"></script>
+<script src="~/Scripts/security.js"></script>
+<script src="~/Scripts/CustomScripts/app.js"></script>
+<script src="~/Scripts/CustomScripts/auth.js"></script>
+<script src="~/Scripts/CustomScripts/main.js"></script>
+<script src="~/Scripts/CustomScripts/style.js"></script>
+<script src="~/Scripts/CustomScripts/widgets.js"></script>
+</body>
+</html>

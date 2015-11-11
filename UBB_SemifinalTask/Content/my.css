@@ -1,0 +1,63 @@
+div.content_draggable{
+    overflow: visible;
+    position: relative;
+    width: inherit !important;
+    /*height: inherit !important;*/
+    text-align: center;
+}
+.sort_list{
+    overflow: auto;
+}
+
+#sortable div.adding_content{
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+#sortable div > q{
+    font-style: italic;
+}
+
+.center{
+    position: relative;
+}
+
+div.sort_list:hover .hover{
+    display: block;
+}
+
+#sortable{
+    min-height: 40px;
+}
+
+.element__h1, .element__h2{
+    display: none;
+}
+
+.design{
+    display: block;
+}
+
+.design__item{
+    display: none;
+}
+
+#registration{
+    display: none;
+}
+
+.form-error, .error{
+    color: #ff3333;
+}
+
+#registration, #login{
+    text-align: center;
+}
+
+.infoAuth{
+    display: none;
+}
+
+.success{
+    color: #57db30;
+}

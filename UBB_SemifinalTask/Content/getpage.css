@@ -1,0 +1,36 @@
+﻿#need_pay {
+	/*position: absolute;*/
+	left: 590px;
+	top: 44px;
+	font-weight: bold;
+	color: #e6e6e6;
+	font-family: Verdana;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: left;
+}
+#need_pay b {
+	color: #e72300;
+}
+#need_pay em {
+	font-style: normal;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	font-family: Tahoma,Geneva,Kalimati,sans-serif;
+}
+#need_pay i {
+	font-style: normal;
+	color: black;
+	font-weight: normal;
+}
+#vote em {
+    font-style: normal;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	font-family: Tahoma,Geneva,Kalimati,sans-serif;
+}
+#vote b {
+	color: #e72300;
+}

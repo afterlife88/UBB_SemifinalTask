@@ -1,0 +1,221 @@
+@import url('import/variables.less');
+@import url('import/mixins.less');
+
+// General
+* {
+  .box-sizing(border-box);
+  &:hover, &:focus, &:active {
+    outline: none;
+  }
+}
+html,body {
+  height:100%;
+}
+.background {
+  background: url('../images/background.png') #2c2c2c center top no-repeat;
+  background-size: cover;
+  .size(calc(~'100% - 450px'), 100%);
+  float:left;
+  margin: 0;
+  left: 0;
+  top: 0;
+  &__gradient {
+    .gradient(transparent 0,rgba(0,0,0,.8) 100%);
+    .size(calc(~'100% - 450px'), 40%);
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+  }
+  &__wrap {
+    position: absolute;
+    bottom: 25px;
+    z-index: 2;
+    text-align: center;
+    width: calc(~'100% - 450px');
+    h1 {
+      font-family: 'Beausanspro';
+      font-weight: 400;
+      font-size: 72px;
+      margin: 0 0 15px;
+      color: @gray_translucent;
+      line-height: 68px;
+      .text-shadow(1px, 2px, 10px, rgba(0, 0, 0, 0.70));
+    }
+    h3 {
+      font-family:'Calibri';
+      font-size: 24px;
+      color: @gray_translucent;
+      .text-shadow(1px, 2px, 10px, rgba(0, 0, 0, 0.70));
+    }
+  }
+  &__triangle img {
+    .square(85px);
+    display: block;
+    background-size: contain;
+    position: relative;
+    margin: 0 auto;
+    .opacity(0.7);
+    &:hover {
+      .transform(scale(0.95));
+      .transition(0.5s);
+    }
+  }
+}
+
+.sidebar {
+  background-color: @gray_translucent;
+  .size(450px,100%);
+  float:left;
+  &__logo {
+    width:100%;
+    float:left;
+    padding: 10% 0;
+    img {
+      background-size: contain;
+      .size(181px,146px);
+      position: relative;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  &__form {
+    width:260px;
+    margin:0 auto;
+    position: relative;
+  }
+  select {
+    border: none;
+    .size(100%,35px);
+    padding: 6px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid @gray;
+    color: @gray;
+    background-color: transparent;
+    font-family: Calibri_light;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none !important;
+    background: url('../images/triangle_small.svg') no-repeat right center;
+  }
+  &__input {
+    border: none;
+    .size(100%,30px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid @gray;
+    color: @gray;
+    background-color: transparent;
+    font-family: Calibri_light;
+  }
+  &__submit {
+    background-color: @gray;
+    color: @gray_translucent;
+    font-family: Calibri;
+    font-size: 22px;
+    width:220px;
+    position: relative;
+    display: block;
+    margin: 10px auto 0 auto;
+    border:none;
+    padding: 11px 0;
+    text-align: center;
+    .border-radius(2px);
+    &:hover {
+      .transition(0.5s);
+      .transform(scale(0.95));
+    }
+  }
+  &__singin {
+    width:100%;
+    margin-top:10px;
+    color: @gray;
+    font-family: Calibri_light;
+    font-size: 16px;
+    text-align: center;
+    .opacity(0.6);
+    a {
+      display: inline-block;
+      color: inherit;
+      text-decoration: none;
+      .opacity(0.9);
+    }
+  }
+  &__footer {
+    position: absolute;
+    bottom: 20px;
+    .transform(translateY(0%));
+    height: 30px;
+    width:450px;
+    color: @gray;
+    font-family: Calibri_light;
+    font-size: 12px;
+    text-align: center;
+    a {
+      color: inherit;
+    }
+  }
+  .placeholder(@gray);
+}
+
+.sing_in {
+  .sidebar__logo {
+    padding: 10% 0 20%;
+  }
+}
+
+// Media
+@media screen and (max-width: 980px) {
+  .background__wrap {
+    h1 {
+      font-size: 48px;
+      line-height: 48px;
+    }
+    h3 {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+  }
+  .background__triangle img {
+    .square(60px);
+  }
+}
+@media screen and (max-width: 860px) {
+  .background {
+    background-position: 0%;
+  }
+  .sidebar, .sidebar__footer {
+    width:320px;
+  }
+  .background, .background__gradient, .background__wrap {
+    width: calc(~'100% - 320px');
+  }
+}
+@media screen and (max-width: 640px) {
+  .background, .sidebar, .sidebar__footer, .background__gradient, .background__wrap {
+    width:100%;
+  }
+  .background__wrap {
+    h1 {
+      font-size: 36px;
+      line-height: 36px;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+  }
+  .sidebar {
+    height: auto;
+    &__footer {
+      position: static;
+      margin-bottom: 25px;
+      margin-top: 60px;
+    }
+  }
+  .sidebar__submit {
+    font-size: 16px;
+  }
+  .sidebar__singin {
+    font-size: 14px;
+  }
+}

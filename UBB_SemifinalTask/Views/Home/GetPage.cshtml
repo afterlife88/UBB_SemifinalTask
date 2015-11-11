@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.ProjectName</title>
+    <link href="~/Content/getpage.css" rel="stylesheet" />
+    @Html.Raw(ViewBag.Css)
+    
+</head>
+<body>
+    @Html.Raw(ViewBag.Html)
+<div id="vote">
+    <em>
+        @Html.Raw(ViewBag.Sum)
+    </em>
+</div>
+<br/>
+    <div id="need_pay">
+        @Html.Raw(ViewBag.StillNeeded)
+    </div>
+    <hr />
+    <form action=@ViewBag.Link>
+        <input type="submit" value="Допомогти">
+    </form>
+    @*//   <button class="center__button">Допомогти</button>*@
+</body>
+</html>
