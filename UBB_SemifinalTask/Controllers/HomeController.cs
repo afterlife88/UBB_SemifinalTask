@@ -25,7 +25,7 @@ namespace UBB_SemifinalTask.Controllers
         }
         [System.Web.Mvc.HttpGet]
         [System.Web.Mvc.Route("GetPage/{id}")]
-        // Кэширование запроса, с таймаутом в 60 секунд
+        // Caching requests
         [OutputCache(Duration = 60, VaryByParam = "id")]
         public async Task<ActionResult> GetPage(int id)
         {
