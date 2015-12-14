@@ -140,7 +140,7 @@
                         200: function (data) {
                             alert('Збережено успішно!');
                             var item = JSON.parse(JSON.stringify(data));
-                            $("#getLink").append('<a href="http://ubb-landingpage.somee.com/Home/GetPage/' + item.id + '"style="color: white">Отримати лінк</a>');
+                            $("#getLink").append('<a href="http://localhost:1711/Home/GetPage/' + item.id + '"style="color: white">Отримати лінк</a>');
                         },
                         404: function () {
                             alert('Виникла помилка при збереженні! Перевірте введені данні!');
